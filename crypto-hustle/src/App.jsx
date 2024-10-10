@@ -3,6 +3,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import CoinInfo from "/Components/coinInfo";
 import { Input } from "semantic-ui-react";
+import SideNav from "/Components/SideNav";
 const API_KEY = import.meta.env.VITE_APP_API_KEY;
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
 
   return (
     <div className="whole-page">
+      <SideNav />
       <h1>My Crypto List</h1>
       <input
         type="text"
